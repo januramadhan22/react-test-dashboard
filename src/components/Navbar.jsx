@@ -7,7 +7,7 @@ function Navbar() {
   const [dropDown, setDropDown] = useState(false);
 
   return (
-    <div className="sticky top-0 px-20 py-5 bg-white shadow-md w-full flex justify-between items-center">
+    <div className="sticky top-0 z-50 px-20 py-5 bg-white shadow-md w-full flex justify-between items-center">
       <div className="flex gap-2 items-center text-base font-semibold text-blue-400">
         Pet Central
         <span className="px-1 py-1 bg-blue-400 text-white rounded">ADMIN</span>
