@@ -16,12 +16,12 @@ function Sidebar() {
   const [topFavorite, setTopFavorite] = useState(true);
 
   return (
-    <div className="fixed left-0 z-50 w-[350px] h-screen pl-20 pr-5 py-8 bg-white border-r">
+    <div className="hidden md:block fixed left-0 z-50 w-[280px] md:w-[350px] h-screen pl-4 lg:pl-20 pr-5 py-8 bg-white border-r">
       <div>
         <ul className="w-full">
           <li
             className={`w-full px-4 py-3 border-l-4 border-l-transparent flex flex-col text-gray-500 font-semibold transition ease-in ${
-              isDashboard && "border-l-blue-400"
+              isDashboard && "border-l-blue-500"
             }`}
           >
             <button
@@ -46,7 +46,7 @@ function Sidebar() {
           {/* Reservation */}
           <li
             className={`w-full px-4 py-3 border-l-4 border-l-transparent flex flex-col text-gray-500 font-semibold transition ease-in ${
-              isReservation && "border-l-blue-400"
+              isReservation && "border-l-blue-500"
             }`}
           >
             <button
@@ -78,7 +78,7 @@ function Sidebar() {
           {/* Service */}
           <li
             className={`w-full px-4 py-3 border-l-4 border-l-transparent flex flex-col text-gray-500 font-semibold transition ease-in ${
-              isService && "border-l-blue-400"
+              isService && "border-l-blue-500"
             }`}
           >
             <button
@@ -108,7 +108,7 @@ function Sidebar() {
           {/* Store */}
           <li
             className={`w-full px-4 py-3 border-l-4 border-l-transparent flex flex-col text-gray-500 font-semibold transition ease-in ${
-              isStore && "border-l-blue-400"
+              isStore && "border-l-blue-500"
             }`}
           >
             <button
@@ -138,7 +138,7 @@ function Sidebar() {
           {/* Report */}
           <li
             className={`w-full px-4 py-3 border-l-4 border-l-transparent flex flex-col text-gray-500 font-semibold transition ease-in ${
-              isReport && "border-l-blue-400"
+              isReport && "border-l-blue-500"
             }`}
           >
             <button
@@ -185,7 +185,7 @@ function Sidebar() {
           {/* Customer */}
           <li
             className={`w-full px-4 py-3 border-l-4 border-l-transparent flex flex-col text-gray-500 font-semibold transition ease-in ${
-              isCustomer && "border-l-blue-400"
+              isCustomer && "border-l-blue-500"
             }`}
           >
             <button
@@ -210,7 +210,7 @@ function Sidebar() {
           {/* Chat */}
           <li
             className={`w-full px-4 py-3 border-l-4 border-l-transparent flex flex-col text-gray-500 font-semibold transition ease-in ${
-              isChat && "border-l-blue-400"
+              isChat && "border-l-blue-500"
             }`}
           >
             <button
