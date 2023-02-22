@@ -25,7 +25,7 @@ function Navbar() {
   return (
     <div className="sticky top-0 z-50 px-8 lg:px-20 py-5 bg-white shadow-md w-full flex justify-between items-center">
       {/* Mobile Sidebar */}
-      <div className="relative block md:hidden ">
+      <div className="relative block lg:hidden ">
         <button
           onClick={() => {
             setDrawer(true);
@@ -39,12 +39,12 @@ function Navbar() {
       <>
         <div
           onClick={() => setDrawer(false)}
-          className={`block md:hidden absolute top-0 left-0 w-full h-screen bg-black  z-30 transition ease-linear duration-100 bg-opacity-20 -translate-x-[1000px] ${
+          className={`block lg:hidden absolute top-0 left-0 w-full h-screen bg-black  z-30 transition ease-linear duration-100 bg-opacity-20 -translate-x-[1000px] ${
             drawer && "w-full translate-x-0"
           }`}
         />
         <div
-          className={`md:hidden fixed top-0 left-0 w-[300px] h-screen py-10 px-4 flex flex-col items-center gap-3 z-50 bg-white transition ease-linear duration-200 -translate-x-[300px] ${
+          className={`lg:hidden fixed top-0 left-0 w-[300px] h-screen py-10 px-4 flex flex-col items-center gap-3 z-50 bg-white transition ease-linear duration-200 -translate-x-[300px] ${
             drawer && "w-[300px] translate-x-[1px]"
           }`}
         >
