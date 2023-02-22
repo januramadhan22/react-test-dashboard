@@ -16,7 +16,7 @@ function Sidebar() {
   const [topFavorite, setTopFavorite] = useState(true);
 
   return (
-    <div className="hidden md:block fixed left-0 z-50 w-[280px] md:w-[350px] h-screen pl-4 lg:pl-20 pr-5 py-8 bg-white border-r">
+    <div className="hidden lg:block fixed left-0 z-50 w-[280px] md:w-[350px] h-screen pl-4 lg:pl-20 pr-5 py-8 bg-white border-r">
       <div>
         <ul className="w-full">
           <li
