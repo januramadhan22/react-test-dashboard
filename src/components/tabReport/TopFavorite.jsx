@@ -82,7 +82,7 @@ function TopFavorite() {
       </div>
 
       {/* Resume Data Content */}
-      <div className="w-full grid grid-cols-2 gap-4">
+      <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-4">
         {resumeDatas.map((item) => (
           <div
             key={item.id}
@@ -120,12 +120,12 @@ function TopFavorite() {
       {/* Custom Report Content */}
       <div className="p-4 flex flex-col gap-4 bg-white rounded-xl shadow-md">
         <h3 className="font-bold">Custom Report</h3>
-        <div className="flex items-center justify-between">
-          <div className="w-48 py-2 px-3 flex items-center justify-between bg-white border border-blue-400 text-blue-400 rounded-md">
+        <div className="flex flex-col md:flex-row items-start md:items-center gap-4 justify-between">
+          <div className="w-full md:w-48 py-2 px-3 flex items-center justify-between bg-white border border-blue-400 text-blue-400 rounded-md">
             <span>Today</span>
             <IoIosArrowDown className={`transition ease-in `} />
           </div>
-          <div className="w-fit py-2 px-3 flex items-center justify-between gap-4 bg-white border border-blue-400 text-blue-400 rounded-md">
+          <div className="w-full md:w-fit py-2 px-3 flex items-center justify-between gap-4 bg-white border border-blue-400 text-blue-400 rounded-md">
             <span>Nov 22, 2022 - Nov 22, 2022</span>
             <IoIosArrowDown className={`transition ease-in `} />
           </div>
@@ -168,7 +168,7 @@ function TopFavorite() {
 
         {/* Search Feature */}
         <div className="w-full flex justify-end">
-          <form className="w-64 px-3 py-2 text-sm border rounded-md flex items-center">
+          <form className="w-full md:w-64 px-3 py-2 text-sm border rounded-md flex items-center">
             <input
               type="text"
               placeholder="Search"
@@ -181,7 +181,7 @@ function TopFavorite() {
         </div>
 
         {/* Filter Feature */}
-        <div className="flex items-center justify-between text-sm font-medium text-gray-500">
+        <div className="flex items-center justify-between text-xs md:text-sm font-medium text-gray-500">
           <p>Showing 5 entries</p>
           <span className="flex gap-3 items-center">
             Filter:{" "}
@@ -192,7 +192,7 @@ function TopFavorite() {
         </div>
 
         {/* Card Feature */}
-        <div>
+        <div className="w-full flex flex-col gap-2">
           {productDatas.map((item) => (
             <CardListProduct
               key={item.id}
@@ -207,16 +207,16 @@ function TopFavorite() {
         </div>
 
         {/* Pagination Feature */}
-        <div className="w-full flex justify-end items-center gap-2">
+        <div className="w-full flex justify-center md:justify-end items-center gap-2">
           {pages.map((numb) => (
             <button
-              className="w-10 h-10 p-2 border  rounded-md font-medium text-sm text-gray-500
+              className="w-8 h-8 md:w-10 md:h-10 p-2 border  rounded-md font-medium text-sm text-gray-500
             hover:border-blue-400 hover:text-blue-400 focus:text-white focus:bg-blue-400 focus:border-blue-400 transition ease-in"
             >
               {numb}
             </button>
           ))}
-          <button className="w-10 h-10 p-2 flex items-center justify-center border border-blue-400 rounded-md font-medium text-sm text-blue-400 active:text-white active:bg-blue-400 active:border-blue-400">
+          <button className="w-8 h-8 md:w-10 md:h-10 p-2 flex items-center justify-center border border-blue-400 rounded-md font-medium text-sm text-blue-400 active:text-white active:bg-blue-400 active:border-blue-400">
             <IoIosArrowDown className="-rotate-90" />
           </button>
         </div>
